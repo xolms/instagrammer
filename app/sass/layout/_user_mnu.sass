@@ -1,0 +1,292 @@
+.user-menu
+	width: 100%
+	display: block
+	height: 100%
+
+	&__avatar
+		padding: 37px 43px 0
+
+		&__top
+			@include clearfix
+		&__share
+			float: left
+		&__close
+			float: right
+			background-repeat: no-repeat
+			height: 16px
+			width: 8px
+			position: relative
+			top: 2px
+			cursor: pointer
+			background-image: url("../img/back.svg")
+
+		&__bottom
+			position: relative
+			bottom: 3px
+			text-align: center
+		&__img
+			width: 100px
+			height: 100px
+			border-radius: 10em	
+		&__name
+			color: #fff
+			+fz(14px)
+			padding-top: 20px
+
+	&__container
+		padding-top: 20px
+	&__title
+		+fz(14px)
+		text-transform: uppercase
+		color: $grey
+		display: inline-block
+		padding-left: 34px
+		&--allusers
+			padding-left: 37px
+	&__list
+		padding-top: 16px
+		padding-bottom: 25px
+		&--users
+			padding-top: 20px
+
+	&__linewrap
+		padding: 10px 40px 10px
+
+	&__line
+		height: 1px
+		width: 100%
+		background-color: #FFF
+		opacity: .1
+
+	&__adduser
+		width: 23px
+		height: 23px
+		background-color: darken($grey,30%)
+		display: inline-block
+		border-radius: 10em
+		background-repeat: no-repeat
+		background-image: url("../img/plus-grey.svg")
+		background-position: center
+		position: relative
+		top: 8px
+		margin-left: 78px
+
+	&__link
+		background-color: transparent
+		+trans
+		display: block
+		padding: 9px 37px
+		&--user
+			padding: 10px 37px
+
+		&__imgwrap
+			display: inline-block
+			position: relative
+			width: 40px
+
+		&__img
+			vertical-align: middle
+			display: inline-block
+			opacity: .69
+			+trans
+			position: relative
+			bottom: 2px
+			&--user
+				width: 36px
+				height: 36px
+				border-radius: 10em
+				margin-left: 5px
+
+
+		&__text
+			display: inline-block
+			+fz(14px)
+			+trans
+			color: $grey
+			padding-left: 3px
+			position: relative
+			bottom: 2px
+			&--user
+				padding-left: 5px
+				bottom: 0
+
+		&__right
+			float: right
+
+		&__count
+			background-color: rgba(153, 157, 165, 0.3)
+			border-radius: 25px
+			height: 22px
+			line-height: 22px
+			padding: 0 10px
+			position: relative
+			min-width: 32px
+			text-align: center
+			+fz(12px)
+			+trans
+			color: $grey
+
+	//userlink
+	&__link
+		&--user
+			padding-left: 30px
+			padding-right: 30px
+	//active link
+	&__item
+		&--active
+			background-color: $linkhover
+			.share
+				opacity: 1
+			.user-menu
+				&__link
+					&__text
+						color: #fff
+					&__img
+						opacity: 1
+					&__count
+						color: #fff
+				
+	//hover link
+	&__link
+		&:hover,&:focus
+			background-color: lighten($linkhover,5%)
+			.user-menu
+				&__link
+					&__text
+						color: darken(#fff,15%)
+					&__img
+						opacity: .8
+					&__count
+						color: darken(#fff,15%)
+			.share
+				opacity: 1
+
+//share
+.share
+	display: block
+	cursor: pointer
+	+trans
+	width: 4px
+	&__item
+		background-color: #FFF
+		height: 4px
+		width: 4px
+		border-radius: 10em
+		&--first
+			margin-bottom: 4px
+		&--second
+			margin-bottom: 4px
+	&--users
+		position: relative
+		top: 8px
+		opacity: 0
+
+@media screen and (max-width: 1023px)
+	.container
+		&__right
+			width: 72px
+			position: relative
+	.user-menu
+		position: absolute
+		top: 0px
+		bottom: 0
+		background-color: $rbg
+		&--active
+			//width: 320px
+			//left: -248px
+		&__avatar
+			padding-top: 29px
+			padding-left: 0
+			padding-right: 0
+			width: 45px
+			margin: 0 auto
+			&--dontshow
+				
+
+			&__top
+				padding-bottom: 36px
+				&--dontshow
+					
+
+			
+			&__close
+				float: none
+				margin-left: auto
+				margin-right: auto
+				transform: rotate(180deg)
+				&--dontshow
+
+
+			&__link
+				&--share
+					display: none
+					&--dontshow
+						
+			
+
+			&__bottom
+
+			&__img
+				width: 45px
+				height: 45px
+				&--dontshow
+					
+			&__name
+				display: none
+				&--dontshow
+					
+
+		&__title
+			display: none
+			&--dontshow
+				
+
+		&__item
+			position: relative
+			&--active
+				&::before
+					content: ''
+					display: block
+					position: absolute
+					height: 100%
+					width: 3px
+					background-color: #14e8dc
+		
+		&__adduser
+			width: 25px
+			height: 25px
+			margin-left: 23px
+
+		&__linewrap
+			display: none
+			&--dontshow
+				
+
+		&__link
+			padding: 15px 23px
+			&--user
+				padding: 15px 23px
+			&__img
+				bottom: 0
+				width: 27px
+				height: 27px
+				&--user
+					margin-left: 0
+				&--dontshow
+					
+			&__text
+				display: none
+				&--dontshow
+					
+			&__right
+				display: none
+
+				&--dontshow
+					
+
+@media screen and (max-width: 767px)
+	.container
+		&__right
+			display: none
+
+

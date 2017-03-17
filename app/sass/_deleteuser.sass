@@ -1,0 +1,98 @@
+.delete-users
+	position: fixed
+	top: 0
+	z-index: 100
+	bottom: 0
+	display: none
+	left: 0
+	right: 0
+	width: 100%
+	background-color: rgba(8, 15, 35, 0.9)
+	&--fixed
+		display: block
+
+	&__container
+		max-width: 320px
+		margin: auto
+		top: 50%
+		position: relative
+		background-color: #fff
+		border-radius: 3px
+		transform: translatey(-50%)
+
+	&__wrapper
+		box-shadow: inset 0 -1px 0 0 #edeef5
+		background-color: #fbfbfb
+
+	&__topline
+		padding: 19px
+		padding-bottom: 23px
+		text-align: right
+
+	&__cross
+		cursor: pointer
+
+	&__content
+		text-align: center
+		padding-bottom: 22px
+
+	&__imgwrap
+		position: relative
+		max-width: 212px
+		margin-left: auto
+		margin-right: auto
+
+	&__footer
+		padding: 22px 36px
+
+	&__buttonswrap
+		padding-top: 29px
+		@include clearfix
+
+	&__button
+		border: none
+		background: none
+		+ff($semb)
+		+fz(14px)
+		height: 38px
+		cursor: pointer
+		line-height: 34px
+		font-weight: normal
+		border-radius: 100px
+		width: 110px
+		text-align: center
+		&:hover,&:focus
+			outline: none
+		&--close
+			float: left
+			color: #595c6e
+			border: solid 1px #cfd0d5
+			background-color: #FFF
+		&--submit
+			float: right
+			border: solid 1px rgba(35, 34, 42, 0.05)
+			background-image: linear-gradient(#4559ed, #4559ed), linear-gradient(to bottom, #f4d1e4, #ffd1dc)
+			color: #fff
+
+	&__text
+		+fz(14px)
+		color: $dark
+		text-align: center
+	&__img
+		width: 75px
+		height: 75px
+		border-radius: 10em
+
+
+	&__login
+		padding-top: 19px
+		color: $dark
+		+fz(14px)
+		padding-bottom: 3px
+		+ff($reg)
+
+	&__name
+		color: $dark
+		+fz(10px)
+		+ff($semb)
+		line-height: 8px

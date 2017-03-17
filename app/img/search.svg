@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="14px" viewBox="0 0 13 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>71B721E1-6E2A-4FEA-92F3-271C7DD1B87F</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle id="path-1" cx="5.33333333" cy="5.33333333" r="5.33333333"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="10.6666667" height="10.6666667" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.-Settings-White-list-" transform="translate(-153.000000, -324.000000)" stroke="#1C1C20">
+            <g id="Group-12" transform="translate(153.000000, 324.000000)">
+                <use id="Oval-6" mask="url(#mask-2)" stroke-width="2.4" xlink:href="#path-1"></use>
+                <path d="M8.48142403,9.34337906 L11.6666667,13" id="Path-13" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="17px" viewBox="0 0 15 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>DEEED1A5-0B37-4184-8015-7CB168AC0959</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M4.72052202,2.24137931 L1.66666667,2.24137931 L1.66666667,15.1970766 C1.66666667,15.7839081 2.13188586,16.25 2.70576282,16.25 L12.572015,16.25 C13.1428747,16.25 13.6111111,15.7785901 13.6111111,15.1970766 L13.6111111,2.24137931 L10.5438766,2.24137931 C10.542588,2.23585789 10.541271,2.23033109 10.5399256,2.22479903 L10.4117163,1.69761477 C10.1837034,0.76004802 9.21126258,0 8.24992829,0 L6.97821194,0 C6.01230225,0 5.05431466,0.770819084 4.84128319,1.70935269 L4.72052202,2.24137931 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="11.9444444" height="16.25" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="0" y="2.17944437" width="15" height="1.19557089" rx="0.597785445"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="15" height="1.19557089" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="4.52722218" y="8.77721455" width="6.25" height="1.19557089" rx="0.597785445"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="6.25" height="1.19557089" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <rect id="path-7" x="2.02722218" y="8.77721455" width="6.25" height="1.19557089" rx="0.597785445"></rect>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="6.25" height="1.19557089" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <rect id="path-9" x="7.02722218" y="8.77721455" width="6.25" height="1.19557089" rx="0.597785445"></rect>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="6.25" height="1.19557089" fill="white">
+            <use xlink:href="#path-9"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.-Settings-White-list-Hover-user" transform="translate(-341.000000, -374.000000)" stroke="#FFFFFF">
+            <g id="Users" transform="translate(146.000000, 360.000000)">
+                <g id="Group-25" transform="translate(180.000000, 0.000000)">
+                    <g id="Group-6" transform="translate(15.000000, 14.000000)">
+                        <g id="ICON">
+                            <g id="Group-11">
+                                <use id="Combined-Shape" mask="url(#mask-2)" stroke-width="1.81818182" xlink:href="#path-1"></use>
+                                <use id="Rectangle-2" mask="url(#mask-4)" stroke-width="1.8" fill="#D8D8D8" transform="translate(7.500000, 2.777230) scale(1, -1) translate(-7.500000, -2.777230) " xlink:href="#path-3"></use>
+                                <use id="Rectangle-2" mask="url(#mask-6)" stroke-width="1.8" fill="#D8D8D8" transform="translate(7.652222, 9.375000) scale(1, -1) rotate(90.000000) translate(-7.652222, -9.375000) " xlink:href="#path-5"></use>
+                                <use id="Rectangle-2" mask="url(#mask-8)" stroke-width="1.8" fill="#D8D8D8" transform="translate(5.152222, 9.375000) scale(1, -1) rotate(90.000000) translate(-5.152222, -9.375000) " xlink:href="#path-7"></use>
+                                <use id="Rectangle-2" mask="url(#mask-10)" stroke-width="1.8" fill="#D8D8D8" transform="translate(10.152222, 9.375000) scale(1, -1) rotate(90.000000) translate(-10.152222, -9.375000) " xlink:href="#path-9"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

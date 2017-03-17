@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/styles.min.css"/>
+  </head>
+  <body class="body">
+    <div class="body-wrapper">
+      <div class="header">
+        <div class="header__container">
+          <div class="header__logo"><a href="#" class="header__link header__link--root">ServiceName</a></div>
+          <div class="header__right">
+            <ul class="header__list">
+              <li class="header__list__item header__list__item--tasks"><a href="#" class="button button--big button--white button--newtask">New task</a></li>
+              <li class="header__list__item"><a href="#" class="header__link header__link--alerts"><img src="img/alerts.svg" alt="alerts"/></a>
+                <div class="green-dot green-dot--alerts green-dot--big"></div>
+              </li>
+              <li class="header__list__item"><a href="#" class="header__link header__link--avatar"><img src="img/element.jpg" alt="avatar"/>
+                  <div class="button button--arrow-down"></div></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container__left">
+        </div>
+        <div class="container__right">
+          <div class="user-menu">
+            <div class="user-menu__avatar">
+              <div class="user-menu__avatar__top">
+                <div class="user-menu__avatar__share"><a href="#" class="user-menu__avatar__link user-menu__avatar__link--share">
+                    <div class="share">
+                      <div class="share__item share__item--first"></div>
+                      <div class="share__item share__item--second"></div>
+                      <div class="share__item share__item--last"></div>
+                    </div></a></div>
+                <div class="user-menu__avatar__close"></div>
+              </div>
+              <div class="user-menu__avatar__bottom"><img src="http://lorempixel.com/180/200/technics" alt="avatar" class="user-menu__avatar__img"/>
+                <div class="user-menu__avatar__name">@pouiluang_healthy</div>
+              </div>
+            </div>
+            <div class="user-menu__container">
+              <div class="user-menu__title">menu</div>
+              <ul class="user-menu__list">
+                <li class="user-menu__item user-menu__item--active"><a href="#" class="user-menu__link user-menu__link">
+                    <div class="user-menu__link__imgwrap"><img src="img/message.svg" alt="message" class="user-menu__link__img user-menu__link__img--mesage"/>
+                      <div class="green-dot green-dot--small green-dot--message"></div>
+                    </div>
+                    <div class="user-menu__link__text">Messages</div>
+                    <div class="user-menu__link__right">
+                      <div class="user-menu__link__count">17</div>
+                    </div></a></li>
+                <li class="user-menu__item user-menu__item"><a href="#" class="user-menu__link">
+                    <div class="user-menu__link__imgwrap"><img src="img/comment.svg" alt="message" class="user-menu__link__img user-menu__link__img--comment"/></div>
+                    <div class="user-menu__link__text">Comments</div>
+                    <div class="user-menu__link__right">
+                      <div class="user-menu__link__count">5</div>
+                    </div></a></li>
+                <li class="user-menu__item user-menu__item"><a href="#" class="user-menu__link">
+                    <div class="user-menu__link__imgwrap"><img src="img/task.svg" alt="message" class="user-menu__link__img user-menu__link__img--task"/></div>
+                    <div class="user-menu__link__text">Tasks</div></a></li>
+                <li class="user-menu__item user-menu__item"><a href="#" class="user-menu__link">
+                    <div class="user-menu__link__imgwrap"><img src="img/statistics.svg" alt="message" class="user-menu__link__img user-menu__link__img--statistics"/></div>
+                    <div class="user-menu__link__text">Statistics</div></a></li>
+                <li class="user-menu__item user-menu__item"><a href="#" class="user-menu__link">
+                    <div class="user-menu__link__imgwrap"><img src="img/feed.svg" alt="message" class="user-menu__link__img user-menu__link__img--feed"/></div>
+                    <div class="user-menu__link__text">My feed</div></a></li>
+                <li class="user-menu__item user-menu__item"><a href="#" class="user-menu__link">
+                    <div class="user-menu__link__imgwrap"><img src="img/statistics.svg" alt="message" class="user-menu__link__img user-menu__link__img--post"/></div>
+                    <div class="user-menu__link__text">Posting</div></a></li>
+                <li class="user-menu__item user-menu__item"><a href="#" class="user-menu__link">
+                    <div class="user-menu__link__imgwrap"><img src="img/settings.svg" alt="message" class="user-menu__link__img user-menu__link__img--settings"/></div>
+                    <div class="user-menu__link__text">Settings</div></a></li>
+              </ul>
+              <div class="user-menu__linewrap">
+                <div class="user-menu__line"></div>
+              </div>
+              <div class="user-menu__title user-menu__title--allusers">All accounts</div><a href="#" class="user-menu__adduser"></a>
+              <ul class="user-menu__list user-menu__list--users">
+                <li class="user-menu__item user-menu__item--active"><a href="#" class="user-menu__link user-menu__link--user">
+                    <div class="user-menu__link__imgwrap"><img src="img/element.jpg" alt="message" class="user-menu__link__img user-menu__link__img--user"/>
+                      <div class="green-dot green-dot--users green-dot--small"></div>
+                    </div>
+                    <div class="user-menu__link__text user-menu__link__text--user">@pouiluang_healthy</div>
+                    <div class="user-menu__link__right">
+                      <div class="share share--users">
+                        <div class="share__item share__item--first"></div>
+                        <div class="share__item share__item--second"></div>
+                        <div class="share__item share__item--last"></div>
+                      </div>
+                    </div></a></li>
+                <li class="user-menu__item user-menu__item"><a href="#" class="user-menu__link user-menu__link--user">
+                    <div class="user-menu__link__imgwrap"><img src="http://lorempixel.com/180/200/technics" alt="message" class="user-menu__link__img user-menu__link__img--user"/></div>
+                    <div class="user-menu__link__text user-menu__link__text--user">@pouiluang_healthy</div>
+                    <div class="user-menu__link__right">
+                      <div class="share share--users">
+                        <div class="share__item share__item--first"></div>
+                        <div class="share__item share__item--second"></div>
+                        <div class="share__item share__item--last"></div>
+                      </div>
+                    </div></a></li>
+                <li class="user-menu__item user-menu__item"><a href="#" class="user-menu__link user-menu__link--user">
+                    <div class="user-menu__link__imgwrap"><img src="http://lorempixel.com/180/200/technics" alt="message" class="user-menu__link__img user-menu__link__img--user"/></div>
+                    <div class="user-menu__link__text user-menu__link__text--user">@pouiluang_healthy</div>
+                    <div class="user-menu__link__right">
+                      <div class="share share--users">
+                        <div class="share__item share__item--first"></div>
+                        <div class="share__item share__item--second"></div>
+                        <div class="share__item share__item--last"></div>
+                      </div>
+                    </div></a></li>
+                <li class="user-menu__item user-menu__item"><a href="#" class="user-menu__link user-menu__link--user">
+                    <div class="user-menu__link__imgwrap"><img src="http://lorempixel.com/180/200/technics" alt="message" class="user-menu__link__img user-menu__link__img--user"/></div>
+                    <div class="user-menu__link__text user-menu__link__text--user">@pouiluang_healthy</div>
+                    <div class="user-menu__link__right">
+                      <div class="share share--users">
+                        <div class="share__item share__item--first"></div>
+                        <div class="share__item share__item--second"></div>
+                        <div class="share__item share__item--last"></div>
+                      </div>
+                    </div></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-JSONP/2.4.0/jquery.jsonp.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+  </body>
+</html>

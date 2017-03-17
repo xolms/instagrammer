@@ -1,0 +1,178 @@
+@import "userlist_topline"
+@import "userlist_head"
+
+.list-users
+	max-width: 960px
+	margin: 0 auto
+	margin-top: 20px
+	border: solid 1px rgba(118, 129, 199, 0.1)
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.03)
+	background-color: #FFF
+	border-radius: 3px
+	margin-bottom: 60px
+
+
+.list-users
+	&__content
+		padding-bottom: 63px
+		padding-top: 16px
+		border-bottom: solid 1px rgba(118, 129, 199, 0.1)
+		&__searchwrap
+			padding: 0 40px
+			padding-bottom: 8px
+			height: 50px
+			@include clearfix
+		&__searchcontainer
+			padding: 0 15px
+			position: relative
+		&__search
+			border: none
+			+fz(14px)
+			background-color: transparent
+			width: 100%
+			background-repeat: no-repeat
+			background-image: url("../img/search.svg")
+			background-position: left 1px
+			padding-left: 25px
+			padding-bottom: 8px
+			border-bottom: 1px solid #fff
+			color: $dark
+			&::placeholder
+				color: #76787b
+			&:hover,&:focus
+				outline: none
+			&:focus
+				border-bottom: 1px solid #f0f1f8
+
+		&__clear
+			background-color: transparent
+			border: none
+			width: 12px
+			height: 12px
+			vertical-align: middle
+			position: absolute
+			top: 6px
+			right: 0px
+			display: none
+			+trans
+			&--active
+				display: inline-block
+				opacity: 1
+			&::before
+				content: ''
+				display: block
+				width: 100%
+				height: 1px
+				top: 1px
+				position: relative
+				background-color: $dark
+				transform: rotate(45deg)
+			&::after
+				content: ''
+				display: block
+				width: 100%
+				height: 1px
+				position: relative
+				background-color: $dark
+				transform: rotate(-45deg)				
+			&:focus
+				outline: none
+
+		&__container
+			padding-left: 32px
+			padding-right: 30px
+
+		&__buttonswrap
+			float: right
+			display: none
+
+		&__button
+			border-radius: 100px
+			background-color: #FFF
+			+fz(13px)
+			text-align: center
+			height: 34px
+			line-height: 30px
+			cursor: pointer
+			+ff($reg)
+			&:hover,&:focus
+				outline: none
+			&--selectall
+				border: solid 1px #4559ed
+				color: #4559ed	
+				width: 120px
+				margin-right: 12px
+			&--remove
+				border: solid 1px #ff4a31
+				width: 120px
+				color: #ff4a31
+				margin-right: 12px
+			&--cancel
+				border: 1px solid
+				width: 84px
+				color: $dark
+
+	&__pagination
+		padding: 0 47px
+		height: 93px
+		line-height: 93px
+		&__list
+		&__item
+			display: inline-block
+		&__link
+			border-radius: 10em
+			color: #595c6e
+			display: inline-block
+			vertical-align: middle
+			line-height: 32px
+			text-align: center
+			font-size: 14px
+			margin-left: 10px
+			margin-right: 10px
+
+			&--active
+				border: solid 1px rgba(118, 129, 199, 0.3)
+				width: 34px
+				height: 34px
+				margin-left: 0
+				margin-right: 0
+
+@media screen and (max-width: 1250px)
+	.list-users
+		margin-left: 10px
+		margin-right: 10px
+		&__head
+			padding-left: 20px
+			padding-right: 20px
+		&__content
+			&__searchwrap
+				padding-left: 20px
+				padding-right: 25px
+			&__searchcontainer
+				padding: 0
+			&__container
+				text-align: center
+				padding: 0 20px
+
+@media screen and (max-width: 1023px)
+	.list-users
+		margin-left: 0
+		margin-right: 0
+		&__content
+			&__container
+				padding-left: 10px
+				padding-right: 10px
+
+
+@media screen and (max-width: 767px)
+	.list-users
+		margin-top: 0
+		margin-bottom: 0
+		background-color: #f7f7f7
+		&__content
+			padding-bottom: 20px
+			&__searchwrap
+				display: none
+			&__container
+				padding-left: 8px
+				padding-right: 8px

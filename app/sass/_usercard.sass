@@ -1,0 +1,148 @@
+.user-card
+	border: solid 1px rgba(118, 129, 199, 0.1)
+	box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.03)
+	border-radius: 3px
+	display: inline-block
+	margin-bottom: 12px
+	margin-left: 6px
+	margin-right: 6px
+	max-width: 163px
+	width: 100%
+	text-align: center
+	padding-top: 26px
+	overflow: hidden
+	position: relative
+	padding-bottom: 29px
+	&__img
+		width: 75px
+		height: 75px
+		border-radius: 10em
+		margin-bottom: 19px
+	&__login
+		+fz(14px)
+		color: $dark
+	&__name
+		+fz(10px)
+		+ff($semb)
+		line-height: 15px
+		color: $dark
+
+
+	&__wrapper
+		position: absolute
+		top: 0
+		bottom: 0
+		display: inline-block
+		left: 0
+		right: 0
+		opacity: 0
+		+trans
+		text-align: center
+		background-color: rgba(28, 28, 32, 0.8)
+		&--active
+			opacity: 1
+			
+		&--show
+			&:hover,&:focus
+				opacity: 1
+		&__button
+			opacity: 1
+			cursor: pointer
+			&:hover,&:focus
+				outline: none
+			&--adduser
+				width: 112px
+				height: 34px
+				background-color: $blue
+				border: solid 1px #414248
+				margin-left: auto
+				margin-right: auto
+				margin-top: auto
+				margin-bottom: auto
+				border-radius: 100px
+				line-height: 34px
+				text-align: center
+				color: #fff
+				+fz(13px)
+				+ff($reg)
+				font-weight: normal
+			&--deleteuser
+				border: none
+				background-color: transparent
+
+		&__checkbox
+			display: none
+		&__label
+			width: 18px
+			height: 18px
+			border-radius: 10em
+			opacity: .8
+			display: block
+			cursor: pointer
+			border: solid 1px #ffffff
+			&--checked
+				background-image: url("../img/userdeltrue.svg")
+				background-repeat: no-repeat
+				background-position: center
+				border: none
+
+
+
+		&__topline
+			padding-top: 13px
+			@include clearfix
+		&__left
+			float: left
+			padding-left: 15px
+		&__right
+			float: right
+			padding-right: 13px
+
+
+
+@import "deleteuser"
+
+@media screen and (max-width: 1050px)
+	.user-card
+		max-width: 150px
+
+@media screen and (max-width: 1023px)
+	.user-card
+		max-width: 100%
+		width: 30%
+
+		padding-top: 32px
+		padding-bottom: 33px
+		&__img
+			width: 90px
+			height: 90px
+		&__login
+			+fz(18px)
+		&__name
+			+fz(14px)
+			line-height: 22px
+
+@media screen and (max-width: 767px)
+	.user-card
+		width: 100%	
+		max-width: 148px
+		&__name
+			+fz(10px)
+			line-height: 15px
+		&__login
+			+fz(14px)
+		&__img
+			width: 65px
+			height: 65px
+
+		&__wrapper
+			opacity: 1
+			background-color: transparent
+			&:hover,&:focus
+				background-color: rgba(28, 28, 32, 0.8)
+
+
+@media screen and (max-width: 480px)
+	.user-card
+		margin-left: 0
+		margin-right: 0

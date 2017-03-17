@@ -1,0 +1,64 @@
+//Подключение bourbon
+@import "bourbon"
+
+//Подключение сторонних sass файлов
+@import "vars"
+@import "fonts"
+
+//Sass стили
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+a
+	text-decoration: none
+ul
+	list-style-type: none
+p
+	display: block	
+html
+	height: 100%	
+body
+	min-width: 320px
+	font-size: 16px
+	-webkit-font-smoothing: antialiased
+	height: 100%
+	padding: 0
+	width: 100%
+	margin: 0
+	background-color: #FFF
+	+ff($reg)
+.body
+	&.fixed
+		overflow: hidden
+.container
+	display: table
+	max-width: 1440px
+	margin: 0 auto
+	width: 100%
+	height: 100%
+	position: relative
+	overflow: auto
+	table-layout: fixed
+	&__left
+		display: table-cell
+		vertical-align: top
+		background-color: #f4f4f4
+	&__right
+		display: table-cell
+		vertical-align: top
+		width: 287px
+		background-color: $rbg
+	
+.body-wrapper
+	height: 100%
+	width: 100%
+	padding-bottom: 61px
+
+@import "layout/header"
+@import "title"
+@import "buttons"
+@import "green-dot"
+@import "layout/user_mnu"
+@import "usercard"
+@import "page_userlist/userlist_block"

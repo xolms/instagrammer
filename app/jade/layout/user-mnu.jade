@@ -1,0 +1,49 @@
+.user-menu
+	.user-menu__avatar
+		.user-menu__avatar__top
+			.user-menu__avatar__share
+				a(href="#").user-menu__avatar__link.user-menu__avatar__link--share
+					.share
+						.share__item.share__item--first
+						.share__item.share__item--second
+						.share__item.share__item--last
+			.user-menu__avatar__close
+		.user-menu__avatar__bottom
+			img(src="http://lorempixel.com/180/200/technics", alt="avatar" class="user-menu__avatar__img")
+			.user-menu__avatar__name @pouiluang_healthy
+	.user-menu__container
+		.user-menu__title menu
+		ul.user-menu__list
+			li.user-menu__item.user-menu__item--active
+				a(href="#" class="user-menu__link user-menu__link")
+					.user-menu__link__imgwrap
+						img(src="img/message.svg", alt="message").user-menu__link__img.user-menu__link__img--mesage
+						.green-dot.green-dot--small.green-dot--message
+					.user-menu__link__text Messages
+					.user-menu__link__right
+						.user-menu__link__count 17
+			+user-mnu-count('img/comment.svg','Comments','5','comment')
+			+user-mnu('img/task.svg','Tasks','task')
+			+user-mnu('img/statistics.svg','Statistics','statistics')
+			+user-mnu('img/feed.svg','My feed','feed')
+			+user-mnu('img/statistics.svg','Posting','post')
+			+user-mnu('img/settings.svg','Settings','settings')
+		.user-menu__linewrap
+			.user-menu__line
+		.user-menu__title.user-menu__title--allusers All accounts
+		a(href="#" class="user-menu__adduser")
+		ul.user-menu__list.user-menu__list--users
+			li.user-menu__item.user-menu__item--active
+				a(href="#" class="user-menu__link user-menu__link--user")
+					.user-menu__link__imgwrap
+						img(src="img/element.jpg", alt="message" class="user-menu__link__img user-menu__link__img--user")
+						.green-dot.green-dot--users.green-dot--small
+					.user-menu__link__text.user-menu__link__text--user @pouiluang_healthy
+					.user-menu__link__right
+						.share.share--users
+							.share__item.share__item--first
+							.share__item.share__item--second
+							.share__item.share__item--last
+			+user-mnu-user('@pouiluang_healthy')
+			+user-mnu-user('@pouiluang_healthy')
+			+user-mnu-user('@pouiluang_healthy')

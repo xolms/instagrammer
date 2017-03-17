@@ -1,0 +1,77 @@
+mixin user-mnu(img,text,classs)
+	li.user-menu__item.user-menu__item
+		a(href="#" class="user-menu__link")
+			.user-menu__link__imgwrap
+				img(src=img, alt="message" class="user-menu__link__img user-menu__link__img--"+classs)
+			.user-menu__link__text=text
+
+mixin user-mnu-count(img,text,count,classs)
+	li.user-menu__item.user-menu__item
+		a(href="#" class="user-menu__link")
+			.user-menu__link__imgwrap
+				img(src=img, alt="message" class="user-menu__link__img user-menu__link__img--"+classs)
+			.user-menu__link__text=text
+			.user-menu__link__right
+				.user-menu__link__count=count
+
+mixin user-mnu-user(text)
+	li.user-menu__item.user-menu__item
+		a(href="#" class="user-menu__link user-menu__link--user")
+			.user-menu__link__imgwrap
+				img(src="http://lorempixel.com/180/200/technics", alt="message" class="user-menu__link__img user-menu__link__img--user")
+			.user-menu__link__text.user-menu__link__text--user=text
+			.user-menu__link__right
+				.share.share--users
+					.share__item.share__item--first
+					.share__item.share__item--second
+					.share__item.share__item--last
+
+mixin user
+	.user-card
+		img(src="http://lorempixel.com/180/200/technics", alt="user" class="user-card__img")
+		.user-card__login Edna Stevenson
+		.user-card__name Matilda Klein
+		.user-card__wrapper.user-card__wrapper--show
+			button.user-card__wrapper.user-card__wrapper__button.user-card__wrapper__button--adduser Add user
+mixin user-delete
+	.user-card
+		img(src="http://lorempixel.com/180/200/technics", alt="user" class="user-card__img")
+		.user-card__login Edna Stevenson
+		.user-card__name Matilda Klein
+		.user-card__wrapper.user-card__wrapper--show
+			.user-card__wrapper__topline
+				.user-card__wrapper__left
+					button.user-card__wrapper__button.user-card__wrapper__button--deleteuser
+						img(src="img/deleteuser.svg", alt="delete")
+				.user-card__wrapper__right
+					label.user-card__wrapper__label
+						input(type="checkbox").user-card__wrapper__checkbox
+
+mixin deleteuser
+	.delete-users.delete-users--single
+		.delete-users__container
+			.delete-users__wrapper
+				.delete-users__topline
+					img(src="img/cross.svg", alt="cross").delete-users__cross
+				.delete-users__content
+					.delete-users__imgwrap
+					.delete-users__textwrap
+			.delete-users__footer
+				.delete-users__text
+				.delete-users__buttonswrap
+					button.delete-users__button.delete-users__button--close.delete-users__button--white Cancel
+					button.delete-users__button.delete-users__button--submit.delete-users__button--blue Remove
+
+mixin deleteusers
+	.delete-users.delete-users--multiplue
+		.delete-users__container
+			.delete-users__wrapper
+				.delete-users__topline
+					img(src="img/cross.svg", alt="cross").delete-users__cross
+				.delete-users__content
+					.delete-users__imgwrap
+			.delete-users__footer
+				.delete-users__text
+				.delete-users__buttonswrap
+					button.delete-users__button.delete-users__button--close.delete-users__button--white Cancel
+					button.delete-users__button.delete-users__button--submit.delete-users__button--blue Remove

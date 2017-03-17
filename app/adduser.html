@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title>123</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/styles.min.css"/>
+  </head>
+  <body class="body">
+    <div class="body-wrapper">
+      <div class="header">
+        <div class="header__container">
+          <div class="header__logo"><a href="#" class="header__link header__link--root">ServiceName</a></div>
+          <div class="header__right">
+            <ul class="header__list">
+              <li class="header__list__item header__list__item--tasks"><a href="#" class="button button--big button--white button--newtask">New task</a></li>
+              <li class="header__list__item"><a href="#" class="header__link header__link--alerts"><img src="img/alerts.svg" alt="alerts"/></a>
+                <div class="green-dot green-dot--alerts green-dot--big"></div>
+              </li>
+              <li class="header__list__item"><a href="#" class="header__link header__link--avatar"><img src="img/element.jpg" alt="avatar"/>
+                  <div class="button button--arrow-down"></div></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container__left">
+          <div class="list-users-topline">
+            <div class="list-users-topline__container">
+              <h2 class="list-users-topline__title">Settings</h2>
+              <ul class="list-users-topline__menu">
+                <li class="list-users-topline__item list-users-topline__item--first"><a href="#" class="list-users-topline__link">Profile</a></li>
+                <li class="list-users-topline__item"><a href="#" class="list-users-topline__link list-users-topline__link--active">white list</a></li>
+                <li class="list-users-topline__item list-users-topline__item--last"><a href="#" class="list-users-topline__link">black list</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="list-users">
+            <div class="list-users__head">
+              <h3 class="list-users__head__title">The white list</h3>
+              <div class="list-users__head__help">
+                <div class="list-users__head__helpbutton"></div>
+                <div class="list-users__head__helpwrap">
+                  <div class="list-users__head__helpwrap__tophelp">
+                    <div class="list-users__head__helpwrap__left"><img src="img/darkhelp.svg" alt="help" class="list-users__head__helpwrap__img list-users__head__helpwrap__img--help"/></div>
+                    <div class="list-users__head__helpwrap__right"><img src="img/cross.svg" alt="cross" class="list-users__head__helpwrap__img list-users__head__helpwrap__img--cross"/></div>
+                  </div>
+                  <div class="list-users__head__helpwrap__content">
+                    <p> The white list allows you to select users you want to keep when unfollowing task launched. Users in the white list won’t be unfollowed by the unfollowing task if keeping the white list users function is selected.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="list-users__head__userscount">200 users</div>
+              <div class="list-users__head__buttonwrap"><a href="#" class="list-users__head__button button button--big button--blue">Add user</a></div>
+            </div>
+            <div class="list-users__content">
+              <div class="list-users__content__searchwrap">
+                <form>
+                  <input type="text" placeholder="Search user" class="list-users__content__search"/>
+                  <button type="reset" class="list-users__content__clear"></button>
+                </form>
+              </div>
+              <div class="list-users__content__container">
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+                <div class="user-card"><img src="http://lorempixel.com/180/200/technics" alt="user" class="user-card__img"/>
+                  <div class="user-card__login">Edna Stevenson</div>
+                  <div class="user-card__name">Matilda Klein</div>
+                  <div class="user-card__wrapper user-card__wrapper--show">
+                    <button class="user-card__wrapper user-card__wrapper__button user-card__wrapper__button--adduser">Add user</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-users__pagination">
+              <ul class="list-users__pagination__list">
+                <li class="list-users__pagination__item"><a href="#" class="list-users__pagination__link list-users__pagination__link--active">1</a></li>
+                <li class="list-users__pagination__item"><a href="#" class="list-users__pagination__link list-users__pagination__link">2</a></li>
+                <li class="list-users__pagination__item"><a href="#" class="list-users__pagination__link list-users__pagination__link">3</a></li>
+                <li class="list-users__pagination__item"><a href="#" class="list-users__pagination__link list-users__pagination__link">4</a></li>
+                <li class="list-users__pagination__item"><a href="#" class="list-users__pagination__link list-users__pagination__link">5</a></li>
+                <li class="list-users__pagination__item"><a href="#" class="list-users__pagination__link list-users__pagination__link">6</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container__right">
+          <div class="user-menu">
+            <div class="user-menu__avatar">
+              <div class="user-menu__avatar__top">
+                <div class="user-menu__avatar__share"><a href="#" class="user-menu__avatar__link user-menu__avatar__link--share">
+                    <div class="share">
+                      <div class="share__item share__item--first"></div>
+                      <div class="share__item share__item--second"></div>
+                      <div class="share__item share__item--last"></div>
+                    </div></a></div>
+                <div class="user-menu__avatar__close"></div>
+              </div>
+              <div class="user-menu__avatar__bottom"><img src="http://lorempixel.com/180/200/technics" alt="avatar" class="user-menu__avatar__img"/>
+                <div class="user-menu__avatar__name">@pouiluang_healthy</div>
+              </div>
+            </div>
+            <div class="user-menu__container">
+              <div class="user-menu__title">menu</div>
+              <ul class="user-menu__list">
+                <li class="user-menu__item user-menu__item--active"><a href="#" class="user-menu__link user-menu__link">
+                    <div class="user-menu__link__imgwrap"><img src="img/message.svg" alt="message" class="user-menu__link__img user-menu__link__img--mesage"/>
+                      <div class="green-dot green-dot--small green-dot--message"></div>
+                    </div>
+                    <div class="user-menu__link__text">Messages</div>
+                    <div class="user-menu__link__right">
+                      <div class="user-menu__link__count">17</div>
+                    </div></a></li>
+                <li class="user-menu__item user-menu__item"><a href="#" class="user-menu__link">
+                    <div class="user-menu__link__imgwrap"><img src="img/comment.svg" alt="message" class="user-menu__link__img user-menu__link__img--comment"/></div>
+                    <div class="user-menu__link__text">Comments</div>
+                    <div class="user-menu__link__right">
+                      <div class="user-menu__link__count">5</div>
+                    </div></a></li>
+                <li class="user-menu__item user-menu__item"><a href="#" class="user-menu__link">
+                    <div class="user-menu__link__imgwrap"><img src="img/task.svg" alt="message" class="user-menu__link__img user-menu__link__img--task"/></div>
+                    <div class="user-menu__link__text">Tasks</div></a></li>
+                <li class="user-menu__item user-menu__item"><a href="#" class="user-menu__link">
+                    <div class="user-menu__link__imgwrap"><img src="img/statistics.svg" alt="message" class="user-menu__link__img user-menu__link__img--statistics"/></div>
+                    <div class="user-menu__link__text">Statistics</div></a></li>
+                <li class="user-menu__item user-menu__item"><a href="#" class="user-menu__link">
+                    <div class="user-menu__link__imgwrap"><img src="img/feed.svg" alt="message" class="user-menu__link__img user-menu__link__img--feed"/></div>
+                    <div class="user-menu__link__text">My feed</div></a></li>
+                <li class="user-menu__item user-menu__item"><a href="#" class="user-menu__link">
+                    <div class="user-menu__link__imgwrap"><img src="img/statistics.svg" alt="message" class="user-menu__link__img user-menu__link__img--post"/></div>
+                    <div class="user-menu__link__text">Posting</div></a></li>
+                <li class="user-menu__item user-menu__item"><a href="#" class="user-menu__link">
+                    <div class="user-menu__link__imgwrap"><img src="img/settings.svg" alt="message" class="user-menu__link__img user-menu__link__img--settings"/></div>
+                    <div class="user-menu__link__text">Settings</div></a></li>
+              </ul>
+              <div class="user-menu__linewrap">
+                <div class="user-menu__line"></div>
+              </div>
+              <div class="user-menu__title user-menu__title--allusers">All accounts</div><a href="#" class="user-menu__adduser"></a>
+              <ul class="user-menu__list user-menu__list--users">
+                <li class="user-menu__item user-menu__item--active"><a href="#" class="user-menu__link user-menu__link--user">
+                    <div class="user-menu__link__imgwrap"><img src="img/element.jpg" alt="message" class="user-menu__link__img user-menu__link__img--user"/>
+                      <div class="green-dot green-dot--users green-dot--small"></div>
+                    </div>
+                    <div class="user-menu__link__text user-menu__link__text--user">@pouiluang_healthy</div>
+                    <div class="user-menu__link__right">
+                      <div class="share share--users">
+                        <div class="share__item share__item--first"></div>
+                        <div class="share__item share__item--second"></div>
+                        <div class="share__item share__item--last"></div>
+                      </div>
+                    </div></a></li>
+                <li class="user-menu__item user-menu__item"><a href="#" class="user-menu__link user-menu__link--user">
+                    <div class="user-menu__link__imgwrap"><img src="http://lorempixel.com/180/200/technics" alt="message" class="user-menu__link__img user-menu__link__img--user"/></div>
+                    <div class="user-menu__link__text user-menu__link__text--user">@pouiluang_healthy</div>
+                    <div class="user-menu__link__right">
+                      <div class="share share--users">
+                        <div class="share__item share__item--first"></div>
+                        <div class="share__item share__item--second"></div>
+                        <div class="share__item share__item--last"></div>
+                      </div>
+                    </div></a></li>
+                <li class="user-menu__item user-menu__item"><a href="#" class="user-menu__link user-menu__link--user">
+                    <div class="user-menu__link__imgwrap"><img src="http://lorempixel.com/180/200/technics" alt="message" class="user-menu__link__img user-menu__link__img--user"/></div>
+                    <div class="user-menu__link__text user-menu__link__text--user">@pouiluang_healthy</div>
+                    <div class="user-menu__link__right">
+                      <div class="share share--users">
+                        <div class="share__item share__item--first"></div>
+                        <div class="share__item share__item--second"></div>
+                        <div class="share__item share__item--last"></div>
+                      </div>
+                    </div></a></li>
+                <li class="user-menu__item user-menu__item"><a href="#" class="user-menu__link user-menu__link--user">
+                    <div class="user-menu__link__imgwrap"><img src="http://lorempixel.com/180/200/technics" alt="message" class="user-menu__link__img user-menu__link__img--user"/></div>
+                    <div class="user-menu__link__text user-menu__link__text--user">@pouiluang_healthy</div>
+                    <div class="user-menu__link__right">
+                      <div class="share share--users">
+                        <div class="share__item share__item--first"></div>
+                        <div class="share__item share__item--second"></div>
+                        <div class="share__item share__item--last"></div>
+                      </div>
+                    </div></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-JSONP/2.4.0/jquery.jsonp.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+  </body>
+</html>

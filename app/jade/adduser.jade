@@ -1,0 +1,49 @@
+extend template
+block title
+	title 123
+block content
+	-var item = 30
+	-var pag = 6
+	.list-users-topline
+		.list-users-topline__container
+			h2.list-users-topline__title Settings
+			ul.list-users-topline__menu
+				li.list-users-topline__item.list-users-topline__item--first
+					a(href="#").list-users-topline__link Profile
+				li.list-users-topline__item
+					a(href="#").list-users-topline__link.list-users-topline__link--active white list
+				li.list-users-topline__item.list-users-topline__item--last
+					a(href="#").list-users-topline__link black list
+	.list-users
+		.list-users__head
+			h3.list-users__head__title The white list
+			.list-users__head__help
+				.list-users__head__helpbutton
+				.list-users__head__helpwrap
+					.list-users__head__helpwrap__tophelp
+						.list-users__head__helpwrap__left
+							img(src="img/darkhelp.svg", alt="help").list-users__head__helpwrap__img.list-users__head__helpwrap__img--help
+						.list-users__head__helpwrap__right
+							img(src="img/cross.svg", alt="cross").list-users__head__helpwrap__img.list-users__head__helpwrap__img--cross
+					.list-users__head__helpwrap__content
+						p  The white list allows you to select users you want to keep when unfollowing task launched. Users in the white list won’t be unfollowed by the unfollowing task if keeping the white list users function is selected.
+			.list-users__head__userscount 200 users
+			.list-users__head__buttonwrap
+				a(href="#").list-users__head__button.button.button--big.button--blue Add user
+		.list-users__content
+			.list-users__content__searchwrap
+				form()
+					input(type="text" placeholder="Search user").list-users__content__search
+					button(type="reset").list-users__content__clear
+			.list-users__content__container
+				-for (var i = 1; i<=item;i++){
+					+user
+				-}
+		.list-users__pagination
+			ul.list-users__pagination__list
+				li.list-users__pagination__item
+					a(href="#").list-users__pagination__link.list-users__pagination__link--active 1
+				-for (var i = 2; i<=pag; i++){
+					li.list-users__pagination__item
+						a(href="#").list-users__pagination__link.list-users__pagination__link=i				
+				-}
